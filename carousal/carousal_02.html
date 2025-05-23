@@ -1,0 +1,60 @@
+<!--01,20250522-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="02.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header>
+      <div class="carouse">
+        <img src="../img/img/Kelong.jpg" alt="Pair_C" class="img_1" />
+        <blockquote class="testimonial">
+          <p class="testimonial_text">
+            "German,Kelong;" “科隆大教堂，德语称为 Kölner
+            Dom，是德国最具代表性的哥特式建筑杰作之一，坐落于莱茵河畔的科隆市中心。这座宏伟的教堂始建于1248年，历时逾600年才最终完工，是欧洲中世纪建筑与宗教信仰的象征。其高耸入云的双塔、精美绝伦的彩色玻璃窗和丰富的宗教藏品，使其被列为世界文化遗产。从塔顶俯瞰全城，莱茵河的壮丽景色尽收眼底。教堂还供奉着三王圣骨，吸引着全球无数朝圣者与游客。无论是建筑爱好者、历史探索者，还是虔诚信徒，科隆大教堂都以其庄严与神圣打动人心。”
+          </p>
+          <p class="testimonial_author">Sikoll Cecil</p>
+          <p class="testimonial_author_title">
+            aking it a place hard to leave.
+          </p>
+        </blockquote>
+        <button class="btn_right" onclick="window.location.href='#'">></button>
+        <button
+          class="btn_left"
+          onclick="window.location.href='carousal_01.html'"
+        >
+          <
+        </button>
+        <div class="dots">
+          <button class="dot dot_start" onclick="highlightDot(0)">
+            &nbsp;
+          </button>
+          <button class="dot" onclick="highlightDot(1)">&nbsp;</button>
+          <button class="dot" onclick="highlightDot(2)">&nbsp;</button>
+          <button class="dot" onclick="highlightDot(3)">&nbsp;</button>
+        </div>
+      </div>
+    </header>
+    <article></article>
+    <footer></footer>
+    <script>
+      let currentDot = 0; // 初始亮起的按钮
+
+      const pages = ["carousal_01.html", "#", "#", "#"];
+
+      function highlightDot(index) {
+        // 移除所有按钮的 active 类
+        document.querySelectorAll(".dot").forEach((dot) => {
+          dot.classList.remove("active");
+        });
+        // 为当前点击的按钮添加 active 类
+        document.querySelectorAll(".dot")[index].classList.add("active");
+        // 更新当前亮起的按钮
+        currentDot = index;
+        // 跳转到对应的网页
+        window.location.href = pages[index];
+      }
+    </script>
+  </body>
+</html>

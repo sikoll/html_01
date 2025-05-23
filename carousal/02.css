@@ -1,0 +1,186 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  font-size: 24px;
+  font-family: "sans-serif";
+}
+
+img {
+  width: 270px;
+  height: 360px;
+}
+
+p {
+  line-height: 1.2;
+}
+
+.carouse {
+  width: 960px;
+  height: 320px;
+  background-color: #d0e7f9; /* 淡蓝背景 */
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  grid-template-rows: 6fr 1fr;
+  row-gap: 10px;
+  margin: 60px auto;
+  border: 5px solid #a4c8e1;
+  border-radius: 20px;
+  box-shadow: 12px 12px 15px #6ea0c6;
+  position: relative;
+}
+
+.img_1 {
+  margin: -20px 0 0 60px;
+  border: 5px solid #a4c8e1;
+  border-radius: 20px;
+  box-shadow: 12px 12px 15px #6ea0c6;
+}
+
+.testimonial {
+  height: 280px;
+  margin: 8px 10px;
+  padding: 10px 0;
+  background-color: #e2f0fb;
+  border: 2px solid #a4c8e1;
+  border-radius: 20px;
+}
+
+.testimonial_text {
+  text-align: center;
+  font-size: 18px;
+  color: #3c7ea5;
+  text-align: left;
+  text-indent: 2em;
+  line-height: 1.4;
+  letter-spacing: 1;
+  padding: 10px 20px 10px 20px;
+}
+
+.testimonial_author {
+  font-size: 12px;
+  color: #2a9fd6;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.testimonial_author_title {
+  font-size: 12px;
+  color: #5a8b94;
+  text-transform: uppercase;
+  font-style: italic;
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+.btn_right {
+  height: 64px;
+  width: 64px;
+  background-color: #e0f4ff;
+  border: 1px solid #77b1d7;
+  border-radius: 50%;
+  font-size: 24px;
+  font-weight: bold;
+  color: #3c7ea5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 12px 24px rgba(100, 170, 220, 0.3);
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  transform: translate(40%, -50%);
+}
+
+.btn_left {
+  height: 64px;
+  width: 64px;
+  background-color: #e0f4ff;
+  border: 1px solid #77b1d7;
+  border-radius: 50%;
+  font-size: 24px;
+  font-weight: bold;
+  color: #3c7ea5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 12px 24px rgba(100, 170, 220, 0.3);
+  position: absolute;
+  top: 50%;
+  transform: translate(-15%, -50%);
+}
+
+.btn_left {
+  left: 10px;
+  transition: background-color 0.6s ease;
+}
+
+.btn_left:hover {
+  background-color: #3c7ea5;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.btn_right:hover {
+  background-color: #3c7ea5;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.btn_right {
+  right: 10px;
+  transition: background-color 0.6s ease;
+}
+
+/* dots */
+.dots {
+  position: absolute;
+  bottom: -12%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.dot {
+  height: 18px;
+  width: 18px;
+  border: #3c7ea5 solid 1px;
+  background-color: #ecf6fc;
+  border-radius: 50%;
+  transition: background-color 0.6s ease;
+}
+
+.dot:hover {
+  background-color: #3c7ea5;
+  cursor: pointer;
+}
+
+.dot_start {
+  background-color: #ecf6fc;
+}
+
+.dot_start:active {
+  background-color: #3c7ea5;
+}
+
+.dot_start:hover {
+  background-color: #3c7ea5;
+}
+
+.dot:active {
+  background-color: #1d4f72;
+}
+
+.dot:focus {
+  background-color: #3c7ea5;
+}
+
+.dot:visited {
+  background-color: #ffffff;
+}

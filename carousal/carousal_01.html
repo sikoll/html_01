@@ -1,0 +1,60 @@
+<!--01,20250522-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="01.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header>
+      <div class="carouse">
+        <img src="../img/img/Pair-C.jpg" alt="Pair_C" class="img_1" />
+        <blockquote class="testimonial">
+          <p class="testimonial_text">
+            "Pair,a city at
+            German,"巴黎，被誉为"光之城"和"浪漫之都"，是法国的首都及最大城市，横跨塞纳河两岸，以其丰富的历史、艺术与时尚闻名于世。作为欧洲文化中心之一，巴黎拥有众多世界级地标，如埃菲尔铁塔、卢浮宫、凯旋门和巴黎圣母院，每一处都承载着深厚的历史与艺术底蕴。漫步在香榭丽舍大街，或在蒙马特高地欣赏城市全景，都能感受到这座城市独特的魅力。巴黎还是美食与时尚的天堂，从精致的法式甜点到高级时装，无不体现着其优雅与创意。无论是艺术爱好者、历史追寻者，还是浪漫旅人，巴黎总能以其永恒的魅力让人流连忘返。
+          </p>
+          <p class="testimonial_author">Sikoll Cecil</p>
+          <p class="testimonial_author_title">
+            aking it a place hard to leave.
+          </p>
+        </blockquote>
+        <button
+          class="btn_right"
+          onclick="window.location.href='carousal_02.html'"
+        >
+          >
+        </button>
+        <button class="btn_left" onclick="window.location.href='#'"><</button>
+        <div class="dots">
+          <button class="dot dot_start" onclick="highlightDot(0)">
+            &nbsp;
+          </button>
+          <button class="dot" onclick="highlightDot(1)">&nbsp;</button>
+          <button class="dot" onclick="highlightDot(2)">&nbsp;</button>
+          <button class="dot" onclick="highlightDot(3)">&nbsp;</button>
+        </div>
+      </div>
+    </header>
+    <article></article>
+    <footer></footer>
+    <script>
+      let currentDot = 0; // 初始亮起的按钮
+
+      const pages = ["#", "carousal_02.html", "#", "#"];
+
+      function highlightDot(index) {
+        // 移除所有按钮的 active 类
+        document.querySelectorAll(".dot").forEach((dot) => {
+          dot.classList.remove("active");
+        });
+        // 为当前点击的按钮添加 active 类
+        document.querySelectorAll(".dot")[index].classList.add("active");
+        // 更新当前亮起的按钮
+        currentDot = index;
+        // 跳转到对应的网页
+        window.location.href = pages[index];
+      }
+    </script>
+  </body>
+</html>
